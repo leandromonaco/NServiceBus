@@ -10,9 +10,15 @@ services:
 
 - name: nservicebus-receiver
   project: NServiceBus.Receiver/NServiceBus.Receiver.csproj
+  bindings:
+  - name: localhost
+    port: 52000
 
 - name: nservicebus-api
   project: NServiceBus.API/NServiceBus.API.csproj
+  bindings:
+  - name: localhost
+    port: 52001
 
 - name: nservicebus-database
   image: mcr.microsoft.com/mssql/server:2019-latest

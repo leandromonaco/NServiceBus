@@ -6,10 +6,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="NServiceBus" Version="7.*" />
-    <PackageReference Include="NServiceBus.Transport.SqlServer" Version="6.*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NServiceBus.Shared\NServiceBus.Shared.csproj" />
+    <ProjectReference Include="..\..\src\NServiceBus.Shared\NServiceBus.Shared.csproj" />
   </ItemGroup>
 </Project>
