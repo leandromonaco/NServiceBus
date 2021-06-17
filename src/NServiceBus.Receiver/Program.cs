@@ -41,9 +41,6 @@ public static class Program
 
         #endregion
 
-        SqlHelper.CreateSchema(connection, "receiver");
-        var allText = File.ReadAllText("Startup.sql");
-        SqlHelper.ExecuteSql(connection, allText);
         var endpointInstance = await Endpoint.Start(endpointConfiguration).ConfigureAwait(false);
         Console.WriteLine("Press any key to exit");
         Console.ReadKey();

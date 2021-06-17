@@ -33,8 +33,6 @@ public static class Program
 
         #endregion
 
-        SqlHelper.CreateSchema(connection, "sender");
-
         var endpointInstance = await Endpoint.Start(endpointConfiguration)
             .ConfigureAwait(false);
         Console.WriteLine("Press enter to send a message");
