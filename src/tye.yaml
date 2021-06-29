@@ -6,6 +6,10 @@
 #
 name: nservicebus
 
+extensions:
+- name: seq
+  logPath: ./.logs
+
 services:
 
 - name: nservicebus-receiver
